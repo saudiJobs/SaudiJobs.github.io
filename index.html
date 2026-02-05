@@ -1,169 +1,12 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-page="index">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>وظائف السعودية | بحث ذكي وروابط تقديم رسمية</title>
-  <meta name="description" content="صفحة وظائف السعودية: بحث سريع، فلاتر واضحة، وروابط تقديم رسمية عبر المنصات المعتمدة." />
-  <style>
-    :root{
-      --bg:#0b1220;
-      --card:#0f1b33;
-      --muted:#93a4c7;
-      --text:#eef3ff;
-      --line:rgba(255,255,255,.08);
-      --chip:rgba(255,255,255,.08);
-      --btn:#ffffff;
-      --btnText:#0b1220;
-      --accent:#a7c5ff;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius:18px;
-      --radiusSm:12px;
-      --max:1120px;
-      --pad:16px;
-      font-synthesis-weight:none;
-      text-rendering:optimizeLegibility;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 20% -10%, rgba(167,197,255,.25), transparent 60%),
-                  radial-gradient(1200px 600px at 90% 0%, rgba(255,255,255,.08), transparent 60%),
-                  var(--bg);
-      color:var(--text);
-    }
-    a{color:inherit; text-decoration:none}
-    .container{max-width:var(--max); margin:0 auto; padding:24px var(--pad)}
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between; gap:12px;
-      padding:14px 16px; border:1px solid var(--line); border-radius:var(--radius);
-      background: rgba(15,27,51,.65); backdrop-filter: blur(10px);
-    }
-    .brand{display:flex; align-items:center; gap:10px; font-weight:800}
-    .logo{
-      width:36px; height:36px; border-radius:12px;
-      background: linear-gradient(135deg, rgba(167,197,255,.9), rgba(255,255,255,.2));
-      box-shadow: var(--shadow);
-    }
-    .nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-start}
-    .nav a{
-      padding:10px 12px; border:1px solid var(--line); border-radius:999px;
-      color:var(--muted); background: rgba(255,255,255,.03);
-    }
-    .hero{
-      margin-top:18px;
-      border:1px solid var(--line); border-radius:calc(var(--radius) + 6px);
-      background: linear-gradient(180deg, rgba(15,27,51,.85), rgba(15,27,51,.55));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .heroInner{padding:22px}
-    .hero h1{margin:0 0 8px; font-size:26px; letter-spacing:-.2px}
-    .hero p{margin:0 0 18px; color:var(--muted); line-height:1.8}
-    .searchRow{
-      display:grid; grid-template-columns: 1.2fr .8fr .6fr auto; gap:10px;
-    }
-    .field{
-      display:flex; flex-direction:column; gap:6px;
-      padding:12px 12px; border:1px solid var(--line); border-radius:var(--radiusSm);
-      background: rgba(255,255,255,.03);
-      min-height:54px;
-    }
-    .field label{font-size:12px; color:var(--muted)}
-    .field input, .field select{
-      border:0; outline:0; background:transparent; color:var(--text);
-      font-size:14px;
-    }
-    .btn{
-      border:0; cursor:pointer;
-      border-radius:14px;
-      padding:14px 16px;
-      background: var(--btn); color: var(--btnText);
-      font-weight:800;
-      min-height:54px;
-    }
-    .filters{
-      margin-top:14px;
-      display:flex; gap:10px; flex-wrap:wrap;
-    }
-    .chip{
-      padding:10px 12px; border:1px solid var(--line);
-      border-radius:999px; background: var(--chip);
-      color:var(--text); font-size:13px;
-    }
-    .grid{
-      margin-top:18px;
-      display:grid; grid-template-columns: 1.15fr .85fr; gap:14px;
-    }
-    .card{
-      border:1px solid var(--line); border-radius:var(--radius);
-      background: rgba(15,27,51,.62); backdrop-filter: blur(10px);
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .cardHead{
-      padding:16px 16px 10px;
-      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
-    }
-    .card h2{margin:0; font-size:16px}
-    .card .sub{color:var(--muted); font-size:13px; margin-top:6px; line-height:1.7}
-    .list{padding:0 10px 12px}
-    .job{
-      display:flex; justify-content:space-between; gap:10px;
-      padding:12px; margin:10px;
-      border:1px solid var(--line); border-radius:14px;
-      background: rgba(255,255,255,.03);
-    }
-    .job strong{display:block; font-size:14px}
-    .meta{color:var(--muted); font-size:12px; margin-top:6px}
-    .cta{
-      display:flex; flex-direction:column; gap:8px; align-items:flex-start;
-    }
-    .linkBtn{
-      display:inline-flex; gap:8px; align-items:center;
-      padding:10px 12px; border-radius:12px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      color:var(--text);
-      font-weight:700; font-size:13px;
-      white-space:nowrap;
-    }
-    .linkBtn:hover{border-color:rgba(167,197,255,.45)}
-    .sources{
-      display:grid; grid-template-columns:1fr 1fr; gap:10px;
-      padding:14px 16px 16px;
-      border-top:1px solid var(--line);
-    }
-    .note{
-      padding:14px 16px 16px;
-      border-top:1px solid var(--line);
-      color:var(--muted);
-      line-height:1.9;
-      font-size:13px;
-    }
-    .tips{
-      padding:14px 16px 16px;
-      border-top:1px solid var(--line);
-      color:var(--text);
-    }
-    .tips ul{margin:10px 0 0; padding:0 18px; color:var(--muted); line-height:1.9}
-    .footer{
-      margin-top:18px;
-      padding:16px;
-      border:1px solid var(--line); border-radius:var(--radius);
-      background: rgba(15,27,51,.5);
-      color:var(--muted); line-height:1.9;
-      display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    }
-
-    @media (max-width: 900px){
-      .searchRow{grid-template-columns:1fr; }
-      .grid{grid-template-columns:1fr}
-      .sources{grid-template-columns:1fr}
-      .nav{display:none}
-    }
-  </style>
+  <meta name="description" content="ابحث عن وظائف السعودية عبر صفحة ديناميكية مرتبطة بملف JSON/Google Sheet، مع صفحات SEO للمدن والتخصصات والمؤهلات وروابط التقديم." />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="stylesheet" href="/assets/style.css" />
 </head>
 <body>
   <div class="container">
@@ -172,62 +15,59 @@
         <div class="logo" aria-hidden="true"></div>
         <div>
           <div>وظائف السعودية</div>
-          <div style="font-size:12px;color:var(--muted);font-weight:600">بحث سريع + روابط تقديم رسمية</div>
+          <div class="small">بحث ذكي + صفحات SEO للمدن والتخصصات والمؤهلات</div>
         </div>
       </div>
       <nav class="nav" aria-label="روابط سريعة">
-        <a href="#featured">وظائف مميزة</a>
-        <a href="#sources">منصات التقديم</a>
-        <a href="#tips">نصائح التقديم</a>
+        <a href="/">الرئيسية</a>
+        <a href="/cities/">المدن</a>
+        <a href="/specialties/">التخصصات</a>
+        <a href="/qualifications/">المؤهلات</a>
       </nav>
     </header>
 
     <section class="hero" aria-label="منطقة البحث">
       <div class="heroInner">
-        <h1>لقطة واحدة… وابدأ التقديم بثقة</h1>
+        <h1>ابحث عن الوظيفة… وافتح رابط التقديم الرسمي مباشرة</h1>
         <p>
-          ابحث بالمدينة أو المسمى أو الشركة، ثم انتقل مباشرة إلى مصدر التقديم الرسمي.
-          هدفنا تقليل التشتيت: نتائج واضحة، فلاتر ذكية، وأزرار “قدم الآن”.
+          هذه صفحة وظائف SEO جاهزة: روابط رسمية، فلاتر، وصفحات تلقائية لكل مدينة وتخصص ومؤهل.
+          البيانات تأتي من <span class="badge">jobs.json</span> أو من <span class="badge">Google Sheet</span> عبر أداة البناء المرفقة.
         </p>
 
-        <div class="searchRow">
+        <form class="searchRow" onsubmit="return false;">
           <div class="field">
-            <label>ابحث (مسمى / شركة / كلمة)</label>
-            <input placeholder="مثال: خدمة عملاء، محاسب، IT، تمهير…" />
+            <label>بحث</label>
+            <input id="q" placeholder="مثال: خدمة عملاء، محاسب، IT، تمهير…" />
           </div>
           <div class="field">
             <label>المدينة</label>
-            <select>
-              <option>كل المدن</option>
-              <option>الرياض</option>
-              <option>جدة</option>
-              <option>الدمام</option>
-              <option>الخبر</option>
-              <option>مكة</option>
-              <option>المدينة</option>
+            <select id="city">
+              <option>الكل</option>
+              <option>الرياض</option><option>جدة</option>
             </select>
           </div>
           <div class="field">
-            <label>المستوى</label>
-            <select>
+            <label>التخصص/التصنيف</label>
+            <select id="category">
               <option>الكل</option>
-              <option>ثانوية</option>
-              <option>دبلوم</option>
-              <option>بكالوريوس</option>
-              <option>خبرة</option>
+              <option>الإدارة الصحية</option><option>تقنية المعلومات</option><option>خدمة العملاء</option>
             </select>
           </div>
-          <button class="btn" type="button">بحث</button>
-        </div>
+          <div class="field">
+            <label>المؤهل</label>
+            <select id="qualification">
+              <option>الكل</option>
+              <option>ثانوية/دبلوم/بكالوريوس</option><option>دبلوم فأعلى</option><option>دبلوم/بكالوريوس</option>
+            </select>
+          </div>
+          <button class="btn" id="searchBtn" type="button">بحث</button>
+        </form>
 
-        <div class="filters" aria-label="فلاتر سريعة">
-          <span class="chip">عن بُعد</span>
-          <span class="chip">دوام جزئي</span>
-          <span class="chip">تمهير</span>
-          <span class="chip">تقنية</span>
-          <span class="chip">صحة</span>
-          <span class="chip">مبيعات</span>
-          <span class="chip">إداري</span>
+        <div class="filters" aria-label="روابط سريعة">
+          <a class="chip" href="/cities/">صفحات المدن</a>
+          <a class="chip" href="/specialties/">صفحات التخصصات</a>
+          <a class="chip" href="/qualifications/">صفحات المؤهلات</a>
+          <a class="chip" href="/jobs/">أرشيف الوظائف</a>
         </div>
       </div>
     </section>
@@ -236,86 +76,63 @@
       <div class="card" id="featured">
         <div class="cardHead">
           <div>
-            <h2>وظائف مميزة اليوم</h2>
-            <div class="sub">نماذج بطاقات—اربطها لاحقًا بقاعدة بيانات أو ملف Excel أو API.</div>
+            <h2>نتائج الوظائف</h2>
+            <div class="sub">النتائج تتحدث من ملف البيانات. (مناسب للجوال وسريع التحميل)</div>
           </div>
-          <a class="linkBtn" href="#sources">مصادر التقديم</a>
+          <span class="badge">Dynamic</span>
         </div>
-
-        <div class="list">
-          <article class="job">
-            <div>
-              <strong>أخصائي خدمة عملاء</strong>
-              <div class="meta">الرياض • دوام كامل • (دبلوم فأعلى)</div>
-            </div>
-            <div class="cta">
-              <a class="linkBtn" href="https://jadarat.sa/ExploreJobs?JobTab=1" target="_blank" rel="noopener">قدم عبر جدارات</a>
-              <a class="linkBtn" href="#" aria-disabled="true">حفظ</a>
-            </div>
-          </article>
-
-          <article class="job">
-            <div>
-              <strong>محاسب / Accountant</strong>
-              <div class="meta">جدة • دوام كامل • (بكالوريوس)</div>
-            </div>
-            <div class="cta">
-              <a class="linkBtn" href="https://www.taqat.sa/" target="_blank" rel="noopener">عرض على طاقات</a>
-              <a class="linkBtn" href="#" aria-disabled="true">مشاركة</a>
-            </div>
-          </article>
-
-          <article class="job">
-            <div>
-              <strong>مساعد إداري</strong>
-              <div class="meta">الدمام • دوام كامل • (ثانوية/دبلوم)</div>
-            </div>
-            <div class="cta">
-              <a class="linkBtn" href="https://www.qiwa.sa/" target="_blank" rel="noopener">خدمات سوق العمل (قوى)</a>
-              <a class="linkBtn" href="#" aria-disabled="true">تنبيه</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="note">
-          <strong style="color:var(--text)">تنبيه مهم:</strong>
-          قد تظهر بعض المنصات الرسمية “طابور انتظار” وقت الضغط؛ هذا طبيعي. الأفضل المحاولة في وقت أقل ازدحامًا أو تحديث الصفحة لاحقًا.
+        <div class="list" id="jobsList">
+          <div class="note">يتم التحميل…</div>
         </div>
       </div>
 
       <aside class="card" id="sources">
         <div class="cardHead">
           <div>
-            <h2>منصات التقديم الرسمية</h2>
-            <div class="sub">روابط مباشرة للمصادر—ضعها كأزرار ثابتة في أعلى الصفحة أيضًا.</div>
+            <h2>صفحات SEO (تقسيمات)</h2>
+            <div class="sub">كل زر يفتح صفحة ثابتة SEO مرتبطة بالرئيسية + تعرض وظائف هذا القسم.</div>
           </div>
         </div>
 
-        <div class="sources">
-          <a class="linkBtn" href="https://jadarat.sa/" target="_blank" rel="noopener">جدارات (المنصة الموحدة)</a>
-          <a class="linkBtn" href="https://www.taqat.sa/" target="_blank" rel="noopener">طاقات (HRDF)</a>
-          <a class="linkBtn" href="https://www.qiwa.sa/" target="_blank" rel="noopener">قوى (سوق العمل)</a>
-          <a class="linkBtn" href="https://www.absher.sa/" target="_blank" rel="noopener">أبشر</a>
-          <a class="linkBtn" href="https://my.gov.sa/en/services/19019" target="_blank" rel="noopener">خدمة التقديم على جدارات (my.gov.sa)</a>
-          <a class="linkBtn" href="https://www.hrsd.gov.sa/en" target="_blank" rel="noopener">وزارة الموارد البشرية (HRSD)</a>
+        <div class="note">
+          <strong style="color:var(--text)">المدن</strong>
+          <div class="sources" id="citiesLinks"></div>
         </div>
 
-        <div class="tips" id="tips">
-          <h2 style="margin:0;font-size:16px">نصائح سريعة ترفع فرصك</h2>
-          <ul>
-            <li>طابق كلمات الوصف الوظيفي داخل سيرتك (مهارات + أدوات + إنجازات).</li>
-            <li>ضع “ملخص مهني” من 3 أسطر: من أنت + ماذا تجيد + ماذا تريد.</li>
-            <li>في المقابلة: حضّر 3 أمثلة إنجاز (مشكلة → إجراء → نتيجة).</li>
-            <li>احذر الروابط غير الرسمية أو طلبات تحويل مالي—التقديم الرسمي لا يحتاج ذلك.</li>
-          </ul>
+        <div class="note">
+          <strong style="color:var(--text)">التخصصات</strong>
+          <div class="sources" id="specialtiesLinks"></div>
+        </div>
+
+        <div class="note">
+          <strong style="color:var(--text)">المؤهلات</strong>
+          <div class="sources" id="qualLinks"></div>
+        </div>
+
+        <div class="note">
+          <strong style="color:var(--text)">مصادر التقديم الرسمية</strong>
+          <div class="sources">
+            <a class="linkBtn" href="https://jadarat.sa/" target="_blank" rel="noopener">جدارات</a>
+            <a class="linkBtn" href="https://www.taqat.sa/" target="_blank" rel="noopener">طاقات</a>
+            <a class="linkBtn" href="https://www.qiwa.sa/" target="_blank" rel="noopener">قوى</a>
+            <a class="linkBtn" href="https://www.absher.sa/" target="_blank" rel="noopener">أبشر</a>
+          </div>
+          <div class="small">نصيحة: اجعل زر “قدم الآن” دائمًا على المصدر الرسمي أو صفحة الشركة.</div>
         </div>
       </aside>
     </section>
 
+    <script>
+      window.__slugMapCities = {"الرياض": "riyadh", "جدة": "jeddah"};
+      window.__slugMapSpecs  = {"الإدارة الصحية": "ar-197262117", "تقنية المعلومات": "ar-9135905977", "خدمة العملاء": "ar-1201992759"};
+      window.__slugMapQuals  = {"ثانوية/دبلوم/بكالوريوس": "ar-5921640118", "دبلوم فأعلى": "ar-6622884230", "دبلوم/بكالوريوس": "ar-4328285542"};
+    </script>
+
     <footer class="footer">
-      <div>© وظائف السعودية — صفحة تجميع وروابط (قابلة للربط بقاعدة بيانات).</div>
-      <div>اقتراح: زر واتساب ثابت “أرسل سيرتك / اسأل عن وظيفة”</div>
+      <div>© 2026 وظائف السعودية — قالب ديناميكي + صفحات SEO</div>
+      <div class="small">ملاحظة: اربط البيانات بملف JSON أو Google Sheet (مرفق build.py لتوليد الصفحات).</div>
     </footer>
   </div>
+  <script src="/assets/app.js" defer></script>
 </body>
 </html>

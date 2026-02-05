@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-page="facet" data-kind="specialties">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>وظائف خدمة العملاء | وظائف السعودية</title>
+  <meta name="description" content="وظائف خدمة العملاء في السعودية: عرض الفرص المتاحة وروابط التقديم." />
+  <link rel="canonical" href="https://example.com/specialties/ar-1201992759/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>وظائف السعودية</div>
+          <div class="small">بحث ذكي + صفحات SEO للمدن والتخصصات والمؤهلات</div>
+        </div>
+      </div>
+      <nav class="nav" aria-label="روابط سريعة">
+        <a href="/">الرئيسية</a>
+        <a href="/cities/">المدن</a>
+        <a href="/specialties/">التخصصات</a>
+        <a href="/qualifications/">المؤهلات</a>
+      </nav>
+    </header>
+
+    <div class="breadcrumbs"><a href="/">الرئيسية</a> / <a href="/specialties/">التخصصات</a> / خدمة العملاء</div>
+
+    <section class="hero">
+      <div class="heroInner">
+        <h1>وظائف خدمة العملاء</h1>
+        <p>صفحة SEO مخصصة لـ <strong>خدمة العملاء</strong> وتعرض الوظائف المرتبطة بهذا القسم مع روابط التقديم.</p>
+        <div class="filters">
+          <a class="chip" href="/">الرئيسية</a>
+          <a class="chip" href="/specialties/">كل التخصصات</a>
+          <a class="chip" href="/jobs/">أرشيف الوظائف</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:14px;">
+      <div class="cardHead">
+        <div>
+          <h2>الوظائف</h2>
+          <div class="sub">يتم تحميل القائمة من ملف البيانات.</div>
+        </div>
+        <span class="badge">SEO</span>
+      </div>
+      <div class="list" id="jobsList"><div class="note">يتم التحميل…</div></div>
+    </section>
+
+    <script>
+      // Pass facet to app.js through URL params (so we can reuse the same renderer)
+      const url = new URL(location.href);
+      url.searchParams.set("slug", "ar-1201992759");
+      url.searchParams.set("label", "خدمة العملاء");
+      history.replaceState(null, "", url.toString());
+    </script>
+
+    <footer class="footer">
+      <div>© 2026 وظائف السعودية — قالب ديناميكي + صفحات SEO</div>
+      <div class="small">ملاحظة: اربط البيانات بملف JSON أو Google Sheet (مرفق build.py لتوليد الصفحات).</div>
+    </footer>
+  </div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

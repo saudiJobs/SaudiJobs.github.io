@@ -1,0 +1,13 @@
+{
+  "site": {
+    "name": "وظائف السعودية",
+    "base_url": "https://example.com",
+    "language": "ar",
+    "timezone": "Asia/Riyadh"
+  },
+  "data_source": {
+    "mode": "json",
+    "json_path": "data/jobs.json",
+    "google_sheet_csv_url": "PASTE_PUBLISHED_CSV_URL_HERE"
+  }
+}
