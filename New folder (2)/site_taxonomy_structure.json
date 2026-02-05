@@ -1,0 +1,352 @@
+{
+  "generated_from": "Saudijobs.xlsx",
+  "counts": {
+    "total_rows": 600,
+    "unique_keywords": 593,
+    "types": {
+      "city": 335,
+      "general": 178,
+      "specialization": 32,
+      "multi": 29,
+      "organization": 19
+    }
+  },
+  "dimensions": {
+    "cities": [
+      {
+        "name": "الرياض",
+        "slug": "الرياض",
+        "pages": 95,
+        "mentions": 95
+      },
+      {
+        "name": "جدة",
+        "slug": "جدة",
+        "pages": 83,
+        "mentions": 83
+      },
+      {
+        "name": "الدمام",
+        "slug": "الدمام",
+        "pages": 21,
+        "mentions": 21
+      },
+      {
+        "name": "مكة",
+        "slug": "مكة",
+        "pages": 21,
+        "mentions": 21
+      },
+      {
+        "name": "المدينة المنورة",
+        "slug": "المدينة-المنورة",
+        "pages": 20,
+        "mentions": 20
+      },
+      {
+        "name": "تبوك",
+        "slug": "تبوك",
+        "pages": 12,
+        "mentions": 12
+      },
+      {
+        "name": "حائل",
+        "slug": "حائل",
+        "pages": 12,
+        "mentions": 12
+      },
+      {
+        "name": "ينبع",
+        "slug": "ينبع",
+        "pages": 12,
+        "mentions": 12
+      },
+      {
+        "name": "الطائف",
+        "slug": "الطائف",
+        "pages": 9,
+        "mentions": 9
+      },
+      {
+        "name": "جازان",
+        "slug": "جازان",
+        "pages": 9,
+        "mentions": 9
+      },
+      {
+        "name": "الجبيل",
+        "slug": "الجبيل",
+        "pages": 8,
+        "mentions": 8
+      },
+      {
+        "name": "القصيم",
+        "slug": "القصيم",
+        "pages": 7,
+        "mentions": 7
+      },
+      {
+        "name": "خميس مشيط",
+        "slug": "خميس-مشيط",
+        "pages": 7,
+        "mentions": 7
+      },
+      {
+        "name": "أبها",
+        "slug": "أبها",
+        "pages": 6,
+        "mentions": 6
+      },
+      {
+        "name": "الأحساء",
+        "slug": "الأحساء",
+        "pages": 5,
+        "mentions": 5
+      },
+      {
+        "name": "الخبر",
+        "slug": "الخبر",
+        "pages": 4,
+        "mentions": 4
+      },
+      {
+        "name": "حفر الباطن",
+        "slug": "حفر-الباطن",
+        "pages": 4,
+        "mentions": 4
+      },
+      {
+        "name": "نجران",
+        "slug": "نجران",
+        "pages": 4,
+        "mentions": 4
+      },
+      {
+        "name": "الباحة",
+        "slug": "الباحة",
+        "pages": 3,
+        "mentions": 3
+      },
+      {
+        "name": "الخرج",
+        "slug": "الخرج",
+        "pages": 3,
+        "mentions": 3
+      },
+      {
+        "name": "بريدة",
+        "slug": "بريدة",
+        "pages": 3,
+        "mentions": 3
+      },
+      {
+        "name": "بيشة",
+        "slug": "بيشة",
+        "pages": 3,
+        "mentions": 3
+      },
+      {
+        "name": "المجمعة",
+        "slug": "المجمعة",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "رابغ",
+        "slug": "رابغ",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "عنيزة",
+        "slug": "عنيزة",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "الرس",
+        "slug": "الرس",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "القريات",
+        "slug": "القريات",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "القطيف",
+        "slug": "القطيف",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "القنفذة",
+        "slug": "القنفذة",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "رفحاء",
+        "slug": "رفحاء",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "سكاكا",
+        "slug": "سكاكا",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "عرعر",
+        "slug": "عرعر",
+        "pages": 1,
+        "mentions": 1
+      }
+    ],
+    "specializations": [
+      {
+        "name": "مهندس",
+        "slug": "مهندس",
+        "pages": 10,
+        "mentions": 11
+      },
+      {
+        "name": "طب",
+        "slug": "طب",
+        "pages": 9,
+        "mentions": 9
+      },
+      {
+        "name": "سائق",
+        "slug": "سائق",
+        "pages": 8,
+        "mentions": 8
+      },
+      {
+        "name": "قانون",
+        "slug": "قانون",
+        "pages": 6,
+        "mentions": 6
+      },
+      {
+        "name": "حارس أمن",
+        "slug": "حارس-أمن",
+        "pages": 5,
+        "mentions": 5
+      },
+      {
+        "name": "تمريض",
+        "slug": "تمريض",
+        "pages": 4,
+        "mentions": 4
+      },
+      {
+        "name": "تعليم",
+        "slug": "تعليم",
+        "pages": 3,
+        "mentions": 3
+      },
+      {
+        "name": "إداري",
+        "slug": "إداري",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "خدمة عملاء",
+        "slug": "خدمة-عملاء",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "مبيعات",
+        "slug": "مبيعات",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "محاسبة",
+        "slug": "محاسبة",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "هندسة",
+        "slug": "هندسة",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "جرافيك",
+        "slug": "جرافيك",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "جودة",
+        "slug": "جودة",
+        "pages": 1,
+        "mentions": 1
+      },
+      {
+        "name": "معلم",
+        "slug": "معلم",
+        "pages": 1,
+        "mentions": 1
+      }
+    ],
+    "qualifications": [
+      {
+        "name": "بدون خبرة",
+        "slug": "بدون-خبرة",
+        "pages": 2,
+        "mentions": 2
+      },
+      {
+        "name": "ثانوية",
+        "slug": "ثانوية",
+        "pages": 1,
+        "mentions": 1
+      }
+    ]
+  },
+  "routes": {
+    "home": "/",
+    "jobs_index": "/الوظائف/",
+    "cities_index": "/المدن/",
+    "specializations_index": "/التخصصات/",
+    "qualifications_index": "/المؤهلات/",
+    "keyword_landing": "/كلمة/{keyword_slug}/",
+    "city_page": "/المدن/{city_slug}/",
+    "specialization_page": "/التخصصات/{spec_slug}/",
+    "qualification_page": "/المؤهلات/{qual_slug}/",
+    "city_spec_page": "/المدن/{city_slug}/{spec_slug}/",
+    "city_qual_page": "/المدن/{city_slug}/المؤهلات/{qual_slug}/",
+    "spec_qual_page": "/التخصصات/{spec_slug}/المؤهلات/{qual_slug}/",
+    "city_spec_qual_page": "/المدن/{city_slug}/{spec_slug}/{qual_slug}/"
+  },
+  "seo_patterns": {
+    "title_city": "وظائف {city} اليوم | أحدث الوظائف وفرص التقديم",
+    "title_spec": "وظائف {spec} في السعودية | فرص حسب الخبرة والمدينة",
+    "title_city_spec": "وظائف {spec} في {city} | تحديث يومي وروابط تقديم",
+    "meta_desc_generic": "تصفح أحدث وظائف {context} في السعودية مع تصفية حسب المدينة والتخصص والمؤهل، وروابط التقديم المباشر إن وجدت."
+  },
+  "internal_linking_rules": [
+    "كل صفحة مدينة تربط إلى: أهم 10 تخصصات داخل المدينة + صفحة جميع الوظائف + صفحات المؤهلات الشائعة.",
+    "كل صفحة تخصص تربط إلى: أهم 10 مدن لهذا التخصص + صفحات المؤهلات + أحدث الإعلانات ذات الصلة.",
+    "كل صفحة مؤهل تربط إلى: أهم المدن + أهم التخصصات + دليل تحسين السيرة والتقديم.",
+    "صفحات (مدينة+تخصص) تربط إلى: المؤهلات + وظائف مشابهة + مدن قريبة."
+  ],
+  "sitemap_suggestions": {
+    "include_types": [
+      "city",
+      "specialization",
+      "qualification",
+      "multi"
+    ],
+    "keyword_landings_policy": "لا تضف /كلمة/ للسّايت ماب إلا إذا كان لها محتوى فعلي (نص + قوائم) وإلا اجعلها noindex."
+  }
+}
